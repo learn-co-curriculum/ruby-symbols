@@ -1,5 +1,5 @@
 ---
-tags: symbols, keys, micro, tutorial
+tags: symbols, string, hashes, keys, tutorial
 languages: ruby
 resources: 
 ---
@@ -28,7 +28,7 @@ In Ruby 1.9, we were introduced with the option of foregoing the hash-rocket (`=
 flatiron_school = {instructors: ["Amanda", "Arel"]}
 ```
 
-That the key expressed like `instructors:` is still interpretted as a symbol by the compiler, and is actually converted to a hash-rocket when ran.
+The key expressed like `instructors:` is still interpretted as a symbol by the compiler, and is actually converted to a hash-rocket when ran.
 
 ## Instructions
 
