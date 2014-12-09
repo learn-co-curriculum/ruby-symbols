@@ -48,3 +48,23 @@ The key expressed like `instructors:` is still interpretted as a symbol by the i
 ## Instructions
 
 Go into `spec/ruby_symbols_spec.rb` and follow the instructions to get the tests to pass.
+
+## Bonus Fun
+
+Run `ruby lib/ruby_symbols.rb`. Don't worry too much about what's going on in this file; just know that we have two nearly identical hashes, one using strings as keys and one using symbols as keys, and we're performing a lookup on each hash 100000 times, as a stress test to get readable run-time numbers.
+
+You should see something like this printed into your terminal:
+
+```bash
+Time elapsed (in seconds) to access data with symbol keys:
+   0.010000   0.000000   0.010000 (  0.012226)
+Time elapsed (in seconds) to access data with string keys:
+   0.040000   0.000000   0.040000 (  0.039910)
+The time might vary depending on how fast your computer is.
+```
+
+The last time, which is in parentheses, is the one that's most telling. That's the real-time reading of the code's execution. Notice that the run-time for the symbols is nearly a third of the run-time for the strings.
+
+Why?
+
+Because strings are mutable and are expected to change and therefore have more memory allocated to them, referencing them requires more memory.
