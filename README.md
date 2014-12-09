@@ -1,5 +1,5 @@
 ---
-tags: symbols, string, hashes, keys, tutorial
+tags: symbols, strings, hashes, keys, tutorial
 languages: ruby
 resources: 
 ---
