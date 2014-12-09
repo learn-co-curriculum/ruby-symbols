@@ -4,10 +4,10 @@ describe "Object Mutability and Immutability" do
     my_string = __
 
     # make an identical string and assign it to this new variable
-    my_concatted_string = __
+    same_string = __
 
     it "has a different object id" do
-      expect(my_string.object_id).to_not eq(my_concatted_string.object_id)
+      expect(my_string.object_id).to_not eq(same_string.object_id)
     end
   end
 
