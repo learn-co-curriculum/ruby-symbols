@@ -5,16 +5,13 @@ resources:
 ---
 # Ruby Symbols
 
-As we've begun to work with hashes, you should already be familiar with the concept of a hash being a collection of key:value pairs:
+What is a symbol? Let's look at the example below:
 
-```ruby
-flatiron_school = {
-  :instructors => ["Amanda", "Arel"], 
-  :placements => ["Jackie", "Joe"]
-}
+```
+:i_am_a_symbol
 ```
 
-Note that the key starts with a colon (:). That isn't just convention; the key here a special type of object called a `symbol`. A `symbol` is closely related to a `string`
+Note that the the keyword above starts with a colon (:). That isn't just convention; the keyword here is a special type of object called a `symbol`. A `symbol` is closely related to a `string`.
 
 Strings are mutable, meaning we can add and remove characters from it. Ruby accounts for that possible mutability by allocating more memory for it. Everytime you create a string, it creates a new object in memory, even if the string text is identical. We can test this by asking an object for its `object_id`, a handle ruby uses to track it in memory:
 
@@ -27,7 +24,7 @@ name.object_id == same_as_name.object_id #=> false
 # Stored in 2 differnt locations in memory
 ```
 
-The symbol, however, is immutable. A symbol will always be the same size in memory, because they are immutable. Unlike the string, the same symbol can be referenced many times. If you have multiple references to one symbol , all of those references are pointing back to the same object. Don't take my word for it:
+The symbol, however, is immutable. What is an immutable object? It's simply an object whose state can't be modified after it is created. A symbol will always be the same size in memory, because they are immutable. Unlike the string, the same symbol can be referenced many times. If you have multiple references to one symbol , all of those references are pointing back to the same object. Don't take my word for it:
 
 ``` ruby
 name = :steven
@@ -43,7 +40,7 @@ In Ruby 1.9, we were introduced with the option of foregoing the hash-rocket (`=
 flatiron_school = {instructors: ["Amanda", "Arel"]}
 ```
 
-The key expressed like `instructors:` is still interpretted as a symbol by the interpreter, and is actually converted to a hash-rocket when run.
+The key expressed like `instructors:` is still interpreted as a symbol by the interpreter, and is actually converted to a hash-rocket when run.
 
 ## Instructions
 
