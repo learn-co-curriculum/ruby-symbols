@@ -3,7 +3,7 @@ tags:
   - strings
   - hashes
   - keys
-  - micro
 languages:
   - ruby
 resources:
+  - 0
