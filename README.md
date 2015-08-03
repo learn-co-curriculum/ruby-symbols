@@ -3,7 +3,7 @@
 ## Objectives
 
 1. Understand what a symbol is in Ruby.
-2. Lean the usefulness of symbols as hash keys.
+2. Learn the usefulness of symbols as hash keys.
 
 ## What is a symbol? 
 
