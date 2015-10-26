@@ -9,9 +9,7 @@
 
 Let's look at the example below:
 
-```
-:i_am_a_symbol
-```
+
 
 Note that the keyword above starts with a colon (`:`). That isn't just convention; the keyword here is a special type of object called a "symbol". A symbol is similar to a string, but with one primary distinction: a symbol can't be changed.
 
