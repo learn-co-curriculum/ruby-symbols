@@ -79,7 +79,7 @@ puts :Steven.object_id
 
 A hash is like a dictionary—it's a collection that can store data as "values" that are accessed by "keys". The keys are reference points. In other words, we use the keys to access the stored information (the values). Think of a hash like a storage unit. The keys are like the address or location of the storage unit and the values are like the content of the storage unit. Accordingly, we're not interested in manipulating the keys. We don't want to change the address, just use it to look up or access the contents. 
 
-Keys do not need to be mutable. Since they don't need to be mutable, and since mutable objects like strings take up more space in memory, we use immutable, memory-saving symbols as hash keys. 
+The other thing that's nice is since all copies of `:Steven` have the same object_id, they use up less memory! `"Steven"` uses a new slot of memory each time you create it. `:Steven` does not. This is because keys do not need to be mutable. Since they don't need to be mutable, and since mutable objects like strings take up more space in memory, we use immutable, memory-saving symbols as hash keys.
 
 ### A Note about Ruby Versions >= 1.9
 
@@ -97,4 +97,4 @@ flatiron_school = {instructor: "Isaac Newton"}
 
 A key expressed like `instructor:` is still interpreted as a symbol by the interpreter and this syntax is understood in the same way as a hash-rocket when the program is run.
 
-You can use either syntax; however, be consistent with whichever one you choose.
+You can use either syntax; however, be consistent with whichever one you choose. We generally recommend the `instructor:` style.
