@@ -1,11 +1,14 @@
 # Ruby Symbols
+## Overview
+We'll discuss a new data type, the symbol, and why they're useful as hash keys.
 
 ## Objectives
 
-1. Understand what a symbol is in Ruby.
-2. Learn the usefulness of symbols as hash keys.
+1. Describe the syntax of symbols.
+2. Explain how symbols are immutable objects.
+3. Explain why symbols are useful as hash keys because of their immutability.
 
-## What is a symbol? 
+## What is a Symbol? 
 
 Let's look at the example below:
 
@@ -19,15 +22,16 @@ To put it another way, symbols are unique. This is the reason we use them as key
 
 ##Difference between a symbol and a string
 
-###Strings are mutable.
-Strings are *mutable*, meaning that we can manipulate them in various ways of adding, removing, or replacing characters. For example, it is perfectly reasonable to change 'Steven' to 'Steve' in Ruby.
+###Strings are Mutable
+
+Strings are *mutable*, meaning that we can manipulate them in various ways by adding, removing, or replacing characters. For example, it is perfectly reasonable to change 'Steven' to 'Steve' in Ruby.
 
 ```ruby
 "Steven".chomp("n")
   #=> "Steve"
 ```
 
-Ruby accounts for that possible mutability by allocating more memory for it. Every time you create a string, *it creates a new object in memory*, even if the string text is identical. Ruby has to store each of them separately because any one of them may change in the future. We can test this by asking an object for its `object_id`—a handle that Ruby uses to track it in memory. 
+Ruby accounts for that possible mutability by allocating more memory for it. Every time you create a string, *it creates a new object in memory*, even if the string text is identical to another one you've already created. Ruby has to store each of them separately because any one of them may change in the future. We can test this by asking an object for its `object_id`—a handle that Ruby uses to track it in memory. 
 
 Drop into `IRB` in your terminal to play around with the following code:
 
@@ -53,8 +57,9 @@ puts "Steven".object_id
 #=> 70236821810060
 ```
 
-###Symbols are immutable.
-The symbol, however, is **immutable**. What is an immutable object? It's simply an object whose state can't be modified after it is created. A symbol will always be the same size in memory because it is *immutable*. Unlike the string, the same symbol can be referenced many times. If you have multiple references to one symbol, all of those references will always point to the same object. You can verify this yourself in IRB:
+###Symbols are Immutable
+
+The symbol, however, is **immutable**. This means that its state can't be modified after it is created and it will always be the same size in memory. Unlike the string, the same symbol can be referenced many times. If you have multiple references to one symbol, all of those references will always point to the same object. You can verify this yourself in IRB:
 
 ``` ruby
 name = :steven
