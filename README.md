@@ -52,9 +52,9 @@ puts "Steven".object_id
 puts "Steven".object_id
 puts "Steven".object_id
 
-#=> 70236825545220
-#=> 70236822108160
-#=> 70236821810060
+# > 70236825545220
+# > 70236822108160
+# > 70236821810060
 ```
 
 ###Symbols are Immutable
@@ -75,9 +75,9 @@ puts :Steven.object_id
 puts :Steven.object_id
 puts :Steven.object_id
 
-#=> 1093988
-#=> 1093988
-#=> 1093988
+# > 1093988
+# > 1093988
+# > 1093988
 ```
 
 ## Why Use Symbols as Hash Keys?
