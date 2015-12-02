@@ -103,3 +103,5 @@ flatiron_school = {instructor: "Isaac Newton"}
 A key expressed like `instructor:` is still interpreted as a symbol by the interpreter and this syntax is understood in the same way as a hash-rocket when the program is run.
 
 You can use either syntax; however, be consistent with whichever one you choose. We generally recommend the `instructor:` style.
+
+<a href='https://learn.co/lessons/ruby-symbols' data-visibility='hidden'>View this lesson on Learn.co</a>
