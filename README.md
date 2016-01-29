@@ -104,4 +104,4 @@ A key expressed like `instructor:` is still interpreted as a symbol by the inter
 
 You can use either syntax; however, be consistent with whichever one you choose. We generally recommend the `instructor:` style.
 
-<a href='https://learn.co/lessons/ruby-symbols' data-visibility='hidden'>View this lesson on Learn.co</a>
+<p data-visibility='hidden'>View <a href='https://learn.co/lessons/ruby-symbols' title='Ruby Symbols'>Ruby Symbols</a> on Learn.co and start learning to code for free.</p>
