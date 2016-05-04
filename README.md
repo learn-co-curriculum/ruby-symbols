@@ -94,7 +94,7 @@ You've probably seen Ruby hashes written with the hash-rocket (`=>`) notation:
 flatiron_school = {:instructor => "Isaac Newton"}
 ```
 
-In Ruby 1.9, we were introduced with the option of foregoing the hash-rocket (`=>`) when writing key/value pairs when the key is a symbol. Instead we can express it like this:
+In Ruby 1.9, we were introduced with the option of forgoing the hash-rocket (`=>`) when writing key/value pairs when the key is a symbol. Instead we can express it like this:
 
 ```ruby
 flatiron_school = {instructor: "Isaac Newton"}
@@ -105,3 +105,5 @@ A key expressed like `instructor:` is still interpreted as a symbol by the inter
 You can use either syntax; however, be consistent with whichever one you choose. We generally recommend the `instructor:` style.
 
 <p data-visibility='hidden'>View <a href='https://learn.co/lessons/ruby-symbols' title='Ruby Symbols'>Ruby Symbols</a> on Learn.co and start learning to code for free.</p>
+
+<p class='util--hide'>View <a href='https://learn.co/lessons/ruby-symbols'>Symbols</a> on Learn.co and start learning to code for free.</p>
