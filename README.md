@@ -8,7 +8,7 @@ We'll discuss a new data type, the symbol, and why they're useful as hash keys.
 2. Explain how symbols are immutable objects.
 3. Explain why symbols are useful as hash keys because of their immutability.
 
-## What is a Symbol? 
+## What is a Symbol?
 
 Let's look at the example below:
 
@@ -31,12 +31,12 @@ Strings are *mutable*, meaning that we can manipulate them in various ways by ad
   #=> "Steve"
 ```
 
-Ruby accounts for that possible mutability by allocating more memory for it. Every time you create a string, *it creates a new object in memory*, even if the string text is identical to another one you've already created. Ruby has to store each of them separately because any one of them may change in the future. We can test this by asking an object for its `object_id`—a handle that Ruby uses to track it in memory. 
+Ruby accounts for that possible mutability by allocating more memory for it. Every time you create a string, *it creates a new object in memory*, even if the string text is identical to another one you've already created. Ruby has to store each of them separately because any one of them may change in the future. We can test this by asking an object for its `object_id`—a handle that Ruby uses to track it in memory.
 
 Drop into `IRB` in your terminal to play around with the following code:
 
 ```ruby
-name = "Steven" 
+name = "Steven"
 same_as_name = "Steven"
 
 name.object_id == same_as_name.object_id
@@ -64,11 +64,11 @@ The symbol, however, is **immutable**. This means that its state can't be modifi
 ``` ruby
 name = :steven
 same_as_name = :steven
-name.object_id == same_as_name.object_id 
+name.object_id == same_as_name.object_id
   #=> true
 ```
 
-Try printing out the `object_id` for the symbol `:Steven` the same way we did for the strings above. This time we should see the exact same id no matter how many times we run the code. Again, the specific id will differ on your machine. 
+Try printing out the `object_id` for the symbol `:Steven` the same way we did for the strings above. This time we should see the exact same id no matter how many times we run the code. Again, the specific id will differ on your machine.
 
 ```ruby
 puts :Steven.object_id
@@ -82,9 +82,7 @@ puts :Steven.object_id
 
 ## Why Use Symbols as Hash Keys?
 
-A hash is like a dictionary—it's a collection that can store data as "values" that are accessed by "keys". The keys are reference points. In other words, we use the keys to access the stored information (the values). Think of a hash as a storage unit. The keys are like the address or location of the storage unit and the values are like the content of the storage unit. Accordingly, we're not interested in manipulating the keys. We don't want to change the address, just use it to look up or access the contents. 
-
-The other thing that's nice is since all copies of `:Steven` have the same object_id, they use up less memory! `"Steven"` uses a new slot of memory each time you create it. `:Steven` does not. This is because keys do not need to be mutable. Since they don't need to be mutable, and since mutable objects like strings take up more space in memory, we use immutable, memory-saving symbols as hash keys.
+All copies of `:Steven` have the same object_id, they use up less memory! `"Steven"` uses a new slot of memory each time you create it. `:Steven` does not. This is because keys do not need to be mutable. Since they don't need to be mutable, and since mutable objects like strings take up more space in memory, we use immutable, memory-saving symbols as hash keys.
 
 ### A Note about Ruby Versions >= 1.9
 
