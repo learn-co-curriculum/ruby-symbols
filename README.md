@@ -82,7 +82,7 @@ puts :Steven.object_id
 
 ## Why Use Symbols as Hash Keys?
 
-All copies of `:Steven` have the same object_id, they use up less memory! `"Steven"` uses a new slot of memory each time you create it. `:Steven` does not. This is because keys do not need to be mutable. Since they don't need to be mutable, and since mutable objects like strings take up more space in memory, we use immutable, memory-saving symbols as hash keys.
+Since all copies of `:Steven` have the same object_id, they use up less memory! `"Steven"` uses a new slot of memory each time you create it. `:Steven` does not. This is because keys do not need to be mutable. Since they don't need to be mutable, and since mutable objects like strings take up more space in memory, we use immutable, memory-saving symbols as hash keys.
 
 ### A Note about Ruby Versions >= 1.9
 
