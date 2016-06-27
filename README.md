@@ -71,9 +71,9 @@ name.object_id == same_as_name.object_id
 Try printing out the `object_id` for the symbol `:Steven` the same way we did for the strings above. This time we should see the exact same id no matter how many times we run the code. Again, the specific id will differ on your machine.
 
 ```ruby
-puts :Steven.object_id
-puts :Steven.object_id
-puts :Steven.object_id
+puts :steven.object_id
+puts :steven.object_id
+puts :steven.object_id
 
 # > 1093988
 # > 1093988
@@ -82,7 +82,7 @@ puts :Steven.object_id
 
 ## Why Use Symbols as Hash Keys?
 
-Since all copies of `:Steven` have the same object_id, they use up less memory! `"Steven"` uses a new slot of memory each time you create it. `:Steven` does not. This is because keys do not need to be mutable. Since they don't need to be mutable, and since mutable objects like strings take up more space in memory, we use immutable, memory-saving symbols as hash keys.
+Since all copies of `:steven` have the same object_id, they use up less memory! `"Steven"` uses a new slot of memory each time you create it. `:steven` does not. This is because keys do not need to be mutable. Since they don't need to be mutable, and since mutable objects like strings take up more space in memory, we use immutable, memory-saving symbols as hash keys.
 
 ### A Note about Ruby Versions >= 1.9
 
