@@ -68,7 +68,7 @@ name.object_id == same_as_name.object_id
   #=> true
 ```
 
-Try printing out the `object_id` for the symbol `:Steven` the same way we did for the strings above. This time we should see the exact same id no matter how many times we run the code. Again, the specific id will differ on your machine.
+Try printing out the `object_id` for the symbol `:steven` the same way we did for the strings above. This time we should see the exact same id no matter how many times we run the code. Again, the specific id will differ on your machine.
 
 ```ruby
 puts :steven.object_id
