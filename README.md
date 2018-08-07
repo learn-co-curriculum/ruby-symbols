@@ -92,7 +92,7 @@ You've probably seen Ruby hashes written with the hash-rocket (`=>`) notation:
 flatiron_school = {:instructor => "Isaac Newton"}
 ```
 
-In Ruby 1.9, we were introduced with the option of forgoing the hash-rocket (`=>`) when writing key/value pairs when the key is a symbol. Instead we can express it like this:
+In Ruby 1.9, we were introduced to the option of forgoing the hash-rocket (`=>`) when writing key/value pairs when the key is a symbol. Instead we can express it like this:
 
 ```ruby
 flatiron_school = {instructor: "Isaac Newton"}
