@@ -20,9 +20,9 @@ Note that the keyword above starts with a colon (`:`). That isn't just conventio
 
 To put it another way, symbols are unique. This is the reason we use them as keys for hashes. Let's take a closer look at the differences.
 
-##Difference between a symbol and a string
+## Difference between a symbol and a string
 
-###Strings are Mutable
+### Strings are Mutable
 
 Strings are *mutable*, meaning that we can manipulate them in various ways by adding, removing, or replacing characters. For example, it is perfectly reasonable to change 'Steven' to 'Steve' in Ruby.
 
@@ -57,7 +57,7 @@ puts "Steven".object_id
 # > 70236821810060
 ```
 
-###Symbols are Immutable
+### Symbols are Immutable
 
 The symbol, however, is **immutable**. This means that its state can't be modified after it is created and it will always be the same size in memory. Unlike the string, the same symbol can be referenced many times. If you have multiple references to one symbol, all of those references will always point to the same object. You can verify this yourself in IRB:
 
